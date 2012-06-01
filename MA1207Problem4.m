@@ -9,7 +9,7 @@ x = 0;
 X = [x];
 
 y = 3; % Group 7 corresponds to y, b = (c)
-Y = [Y]
+Y = [y]
 b = 3;
 
 % Define number of iterations
@@ -29,11 +29,11 @@ while x < b
 	k4 = f(x + h, y + h .* k3);
 	
 	% Increment x, append it to the list
-	x += h;
+	x = x + h;
 	X = [X, x];
 	
 	% Define next y, append it to the list
-	y += (h ./ 6) .* (k1 + 2 .* k2 + 2 .* k3 + k4);
+	y = y + (h ./ 6) .* (k1 + 2 .* k2 + 2 .* k3 + k4);
 	Y = [Y, y];
 end
 

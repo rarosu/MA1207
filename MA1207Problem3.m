@@ -25,8 +25,8 @@ I = 0;
 
 for k = 1:n
 	% Add a trapezoid segment to the integral
-	I += i(a + (k - 1) .* h) + i(a + k .* h);
+	I = I + i(a + (k - 1) .* h) + i(a + k .* h);
 end
 
 % To calculate the area of a trapezoid, divide by 2
-I .*= (h .* 0.5)
+I = I .* (h .* 0.5)
