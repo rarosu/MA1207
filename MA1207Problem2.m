@@ -4,8 +4,7 @@
 % Members: Thomas Sievert, Lars Woxberg
 % Date completed: 3/4 - 2012
 
-% Group 7 corresponds to a = (b)
-a = 12;
+a = 12; % Group 7 corresponds to a = (b)
 
 % Define accuracy constant
 ep = 10^-12;

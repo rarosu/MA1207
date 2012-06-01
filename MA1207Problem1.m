@@ -11,9 +11,8 @@ N = [0 0;
 % Define identity matrix
 I = eye(2);
 
-% Group number 7 corresponds to matrix (c)
 B = [1 7; 
-     1 -4];
+     1 -4]; % Group number 7 corresponds to matrix (c)
  
  % Define A
 A = [B N B;
